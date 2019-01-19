@@ -1,0 +1,11 @@
+{% extends "root/rootTemplates.html" %}
+
+{% block listshow %}
+    {% for post in  posts %}
+     <!-- show post -->
+      <h1> <a href="/detail/{{post.id}}">{{post.id}} </a> <i style="color: darkgoldenrod">{{post.title}}
+        -{{post.datetime}}</i>
+    </h1> 
+    {% endfor %}
+{% endblock listshow %}
+    

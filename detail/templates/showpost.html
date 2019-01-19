@@ -1,0 +1,5 @@
+{% extends "root/rootTemplates.html" %}
+
+{% block listshow %}
+    <i>{{post.title}} - {{post.datetime|date:'d/m/y'}} </i> <br/><b style="font-size: 20px">{{post.body}} </b>
+{% endblock listshow %}

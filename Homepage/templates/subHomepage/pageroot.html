@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- load static file -->
+    {% load static %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<meta http-quiv="X-UA-compatible" content="ie=edge">
+ <!-- call file css in static file  -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/food.css'%}">
+<title>{% block test %}{% endblock  %}
+
+</title>
+</head>
+
+<body>
+    
+  
+    {% block namevalue  %}
+
+    {% endblock  %}
+    
+    <br/>
+    <h1 class="bigfood"> test css</h1>
+</body>
+</html>
